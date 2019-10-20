@@ -13,7 +13,7 @@ body {
 #form-box {
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: 27%;
     height: 40%;
     position: relative;
     top: 50%;
@@ -88,4 +88,49 @@ label {
 
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 500px) {
+    label {
+        font-size: 12px;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+    #login-text,
+    #signup-text {
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Francois One', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=number] {
+        width: 95%;
+        height: 12%;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 8px;
+        font-size: 16px;
+        font-family: 'Lobster', cursive;
+        opacity: 0.8;
+    }
+    input[type=submit] {
+        float: right;
+        width: 50px;
+        height: 25px;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        font-family: 'Lobster', cursive;
+        cursor: pointer;
+    }
+    #signup-form {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: #8669A9;
+        border-radius: 10px;
+    }
 }
